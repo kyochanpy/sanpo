@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+        crossorigin="anonymous"
+    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your App</title>
+</head>
+<body>
+    <div id="container">
+        <nav id="facilities">
+            <ul>
+                <li><button id="toiletButton">トイレ</button></li>
+                <li><button id="stationButton">駅</button></li>
+                <li><button id="busStopButton">バス停</button></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <button id="toggle" class="toggle">
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <h1>最寄り施設検索</h1>
+            </header>
+            <div id="map"></div>
+        </main>
+    </div>
+</body>
+</html>

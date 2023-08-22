@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+body {
+    font-family: "Lato" sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+nav,
+main button {
+    transition: transform 0.3s ease;
+}
+
+/* body.show-nav #container {
+    transform: translateX(-200px);
+} */
+
+body.show-nav nav {
+    transform: translateX(0); /* 追加: navを表示 */
+}
+
+body.show-nav main button {
+    transform: translateX(-200px); /* 追加: navを表示 */
+}
+
+nav {
+    background-color: #30336b;
+    /* border-right: 2px solid rgba(200, 200, 200, 0.1); */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    transform: translateX(100%);
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    /* border-bottom: 2px solid rgba(200, 200, 200, 0.1); */
+    padding: 5px 20px;
+}
+
+nav ul li button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav ul li button:hover {
+    background-color: #0056b3;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    position: relative;
+    padding: 26px;
+    text-align: center;
+    z-index: 50;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.toggle {
+    background-color: #30336b;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+main {
+    width: 100%;
+}
+
+#map {
+    top: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    z-index: 10;
+}
